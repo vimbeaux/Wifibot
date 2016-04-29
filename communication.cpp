@@ -52,37 +52,7 @@ void Communication::Deconnexion(){
 }
 
 void Communication::GenMessage(){
-    /*if(webcam){
-        if(foreward){
-            QUrl url("http://"+ this->adresse +":8080"cameraup);
-            camera->get(QNetworkRequest(url));
-         }
-        else if(backward){
-            QUrl url("http://" + this->adresse +":8080" + cameradown);
-            camera->get(QNetworkRequest(url));
-         }
-        else if(left){
-            QUrl url("http://" + this->adresse +":8080" + cameraleft);
-            camera->get(QNetworkRequest(url));
-         }
-        else if(right){
-            QUrl url("http://" + this->adresse +":8080" + cameraright);
-            camera->get(QNetworkRequest(url));
-         }
-        buf.clear();
-        buf.append((char)0xff);
-        buf.append((char)0x07);
-        buf.append((char)0x00);
-        buf.append((char)0x00);
-        buf.append((char)0x00);
-        buf.append((char)0x00);
-        buf.append((char)0b01010000);
-        quint16 crc = this->crc16(buf, 1);
-        buf.append((char)crc);
-        buf.append((char)(crc>>8));
-    }*/
 
-    //else{
         buf.clear();
         buf.append((char)0xff);
         buf.append((char)0x07);
